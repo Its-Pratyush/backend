@@ -11,8 +11,7 @@ app.use(express.json());
 //available routes
 app.get("/", (req,res)=>{
   res.send("Hello")
-}
-)
+});
 app.use("/api/auth", require("./Routes/auth"));
 app.use("/api/notes", require("./Routes/notes"));
 app.use("/api/todos", require("./Routes/todo"));
